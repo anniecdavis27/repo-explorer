@@ -2,7 +2,6 @@ import Repository from "./Repository";
 import './style.css'
 
 function Repositories({ data, searchResults }) {
-    console.log(searchResults)
 
   return (
     <div className="Repositories">
