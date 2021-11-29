@@ -1,0 +1,39 @@
+h1 {
+    color: darkblue;
+}
+
+.repo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+    overflow: scroll;
+}
+
+.repo-li {
+    list-style-type: none;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.repo-li a {
+    color: darkblue;
+}
+
+.repo-li p {
+    font-size: 15px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+input {
+    margin: 10px;
+    width: 225px;
+    padding: 8px;
+}
