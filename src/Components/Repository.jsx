@@ -1,6 +1,7 @@
 import './style.css'
 
 function Repository({ item }) {
+    //component to define what information is rendered for each repo
 
   return (
       <li className='repo-li'>
