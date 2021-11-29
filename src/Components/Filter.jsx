@@ -17,21 +17,6 @@ const Filter = ({ data }) => {
     setSearchResults(results);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    //console.log(receipts)
-    let results = data.filter((item) => {
-      //console.log(item.person)
-      if(item.name.includes(name)) {
-          return item.name
-      };
-    });
-    //console.log(results)
-    setSearchResults(results);
-    setName("");
-  };
-
   const resetState = (e) => {
     e.preventDefault();
     setSearchResults([...data]);
@@ -42,7 +27,7 @@ const Filter = ({ data }) => {
     <>
       <div>
         <form>
-          <label htmlFor="findRepo" className='label'>Search Name:</label>
+          <label htmlFor="findRepo" className='label'>Filter by Name:</label>
           <br />
           <input
             type="text"
@@ -51,7 +36,7 @@ const Filter = ({ data }) => {
             id="findRepo"
           />
           <br />
-          <button onClick={resetState}>All Repositories</button>
+          <button onClick={resetState}>See All Repositories</button>
         </form>
         <Repositories data={data} searchResults={searchResults} />
       </div>

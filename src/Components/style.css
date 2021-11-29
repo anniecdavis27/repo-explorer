@@ -9,7 +9,7 @@ h1 {
     align-items: flex-start;
     width: 90%;
     margin: auto;
-    height: 90vh;
+    height: 75vh;
     overflow: scroll;
 }
 
@@ -30,10 +30,18 @@ h1 {
     font-size: 15px;
     margin-block-start: 10px;
     margin-block-end: 10px;
+    cursor: default;
 }
 
 input {
     margin: 10px;
     width: 225px;
     padding: 8px;
+}
+
+button {
+    background-color: #fff;
+    border: 2px solid darkblue;
+    height: 30px;
+    border-radius: 5px;
 }
